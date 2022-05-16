@@ -6,6 +6,7 @@ Convert OIB image to size-calibrated TIF
 
 ### Original OIB
 
+![image](https://user-images.githubusercontent.com/7735703/168576402-18d1a958-7def-47b1-acc1-285d5e905128.png)
 
 Note that the pixel size has been set.
 
@@ -20,7 +21,7 @@ Run the conversion:
 bfconvert Image0010_01.oib Image0010_01.ome.tiff
 ```
 
-![image](https://user-images.githubusercontent.com/7735703/168575691-1d875d42-118d-4e6c-892a-01f6e2377d87.png)
+![image](https://user-images.githubusercontent.com/7735703/168576486-0679b1df-228b-4774-ace3-4a08822fb995.png)
 
 Conversion succeeds. Size metadata is preserved (despite micron-to-centimeter change).
 
@@ -40,6 +41,6 @@ fname_tif = sub(".oib", ".ome.tiff", fname_oib)
 write.image(img, fname_tif, force = TRUE, pixelType = "uint16")    # Size metadata is partially lost
 ```
 
-![image](https://user-images.githubusercontent.com/7735703/168575766-904b8028-3bd1-48c4-845d-a69b35571021.png)
+![image](https://user-images.githubusercontent.com/7735703/168576529-da0c7265-c4ec-4df6-a796-dca71ab29246.png)
 
 Size calibration has been lost. However, units (cm) were preserved.
