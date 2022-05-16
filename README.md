@@ -41,6 +41,6 @@ fname_tif = sub(".oib", ".ome.tiff", fname_oib)
 write.image(img, fname_tif, force = TRUE, pixelType = "uint16")    # Size metadata is partially lost
 ```
 
-![image](https://user-images.githubusercontent.com/7735703/168576529-da0c7265-c4ec-4df6-a796-dca71ab29246.png)
+![image](https://user-images.githubusercontent.com/7735703/168576633-417b9160-463e-439c-8925-0a7b07a40562.png)
 
 Size calibration has been lost. However, units (cm) were preserved.
