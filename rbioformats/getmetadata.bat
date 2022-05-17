@@ -1,0 +1,1 @@
+c:\bftools\showinf -omexml-only Image0010_01.ome.tif > Image0010_01.ome.xml
